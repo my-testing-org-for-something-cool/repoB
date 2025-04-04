@@ -1,0 +1,11 @@
+name: Shared Workflow
+
+on:
+  workflow_call:  # 👈 This makes it reusable from another repo
+
+jobs:
+  run-job:
+    runs-on: gha-runner-scale-set-windows
+    steps:
+      - name: Echo from Repo B
+        run: echo "Hello from Repo B!"
