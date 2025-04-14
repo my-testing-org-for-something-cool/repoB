@@ -8,6 +8,11 @@ jobs:
   run-job:
     runs-on: gha-runner-scale-set-windows
     steps:
+      - name: Download artifact
+        if: github.repository != 'my-testing-org-for-something-cool/repoB'
+        uses: actions/download-artifact@v4
+        with:
+          name: nexus-summary
       - name: Echo from Repo B
         run: echo "Hello from Repo B!"
       - name: Display contents of artifacts_to_upload.csv
