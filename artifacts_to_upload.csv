@@ -1,0 +1,4 @@
+DestinationPath,Source,UnzipBeforeUpload
+"Hotfixes/24.2/EventServer","https://nexus.milestone.dev/repository/prod-patch-artifacts-raw/24.2/Milestone/24.2.15463.1507/ES/Milestone.Hotfix.202504140437.ES.24.2.14120.1507.exe","N\A"
+"Hotfixes/24.2/EventServer","https://nexus.milestone.dev/repository/prod-patch-artifacts-raw/24.2/Milestone/24.2.15463.1507/ES/Milestone.Hotfix.202504140437.ES.24.2.14120.1507.exe.integrity.xml","N\A"
+"Hotfixes/24.2/EventServer","https://nexus.milestone.dev/repository/prod-patch-artifacts-raw/24.2/Milestone/24.2.15463.1507/ES/Milestone.Hotfix.202504140437.ES.24.2.14120.1507.ReleaseNotes.txt","N\A"
