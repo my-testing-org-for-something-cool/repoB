@@ -6,7 +6,7 @@ on:
 
 jobs:
   run-job:
-    runs-on: gha-runner-scale-set-windows
+    runs-on: windows-latest
     steps:
       - name: Download artifact
         if: github.repository != 'my-testing-org-for-something-cool/repoB'
