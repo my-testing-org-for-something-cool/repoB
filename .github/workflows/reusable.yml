@@ -8,11 +8,11 @@ jobs:
   run-job:
     runs-on: windows-latest
     steps:
-      - name: Download artifact
-        if: github.repository != 'my-testing-org-for-something-cool/repoB'
-        uses: actions/download-artifact@v4
+      - name: Checkout source
+        uses: actions/checkout@v4
         with:
-          name: nexus-summary
+          sparse-checkout: |
+            artifacts_to_upload.csv
       - name: Echo from Repo B
         run: echo "Hello from Repo B!"
       - name: Display contents of artifacts_to_upload.csv
