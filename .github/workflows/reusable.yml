@@ -1,8 +1,16 @@
 name: Shared Workflow
 
+on:
+  workflow_call:
+  workflow_dispatch:
+
 jobs:
   run-job:
     runs-on: gha-runner-scale-set-windows
     steps:
       - name: Echo from Repo B
         run: echo "Hello from Repo B!"
+      - name: Display contents of artifacts_to_upload.csv
+        run: |
+            echo "Printing contents of artifacts_to_upload.csv:"
+            cat artifacts_to_upload.csv
