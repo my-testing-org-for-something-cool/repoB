@@ -1,4 +1,6 @@
-name: Shared Workflow NEW
+name: Shared Workflow
+run-name: Shared Workflow - ${{ steps.timestamp.outputs.datetime }}
+
 
 on:
   workflow_call:
