@@ -1,5 +1,5 @@
 name: Shared Workflow
-run-name: Shared Workflow Run by @${{ github.actor }}
+run-name: Shared Workflow Run by 56
 
 on:
   workflow_call:
