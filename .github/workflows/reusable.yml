@@ -1,6 +1,5 @@
 name: Shared Workflow
-run-name: Shared Workflow - ${{ steps.timestamp.outputs.datetime }}
-
+run-name: Shared Workflow Run by @${{ github.actor }}
 
 on:
   workflow_call:
